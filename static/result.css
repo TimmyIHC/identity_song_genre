@@ -1,0 +1,79 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #181818;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.result-container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #282828;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 90%; /* Adjust to allow more width */
+    overflow: auto; /* Allow scrolling if content exceeds width */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.result-content {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Distribute space evenly */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.result-section {
+    margin: 20px;
+    flex: 1; /* Allow sections to grow and shrink */
+    min-width: 250px; /* Set a minimum width for each section */
+}
+
+.highlight {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1DB954; /* Spotify green */
+}
+
+.professional {
+    font-size: 26px; /* Increase font size */
+    font-weight: 600; /* Semi-bold */
+    margin: 10px 0;
+    padding: 10px; /* Add padding */
+    background-color: rgba(29, 185, 84, 0.1); /* Light background */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #1DB954; /* Border to highlight */
+}
+
+.spotify-link a {
+    color: #1DB954;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.spotify-link a:hover {
+    color: #1ed760;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #1DB954;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #1ed760;
+}

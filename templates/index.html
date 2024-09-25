@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Song's Genre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Identify Your Song's Genre</h1>
+            <p class="tagline">Unlock the musical essence of your favorite tracks!</p>
+        </header>
+        <main>
+            <div class="form-section">
+                <h2>Enter a Song Name</h2>
+                <form method="POST" action="/">
+                    <input type="text" name="song_name" placeholder="Type the song name..." required>
+                    <button type="submit">Find Genre</button>
+                </form>
+            </div>
+            <div class="info-section">
+                <h2>Why Identify a Song's Genre?</h2>
+                <p>
+                    Understanding the genre of a song can enhance your listening experience and help you discover new music that matches your taste. Genres can indicate the style, mood, and context of a song, providing insight into its artistic expression.
+                </p>
+                <div class="genres-list">
+                    <div class="genre-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3162/3162620.png" alt="Pop Icon" class="genre-icon">
+                        <h3>Pop</h3>
+
+                    </div>
+                    <div class="genre-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4780/4780386.png" alt="Rock Icon" class="genre-icon">
+                        <h3>Rock</h3>
+                    </div>
+                    <div class="genre-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2131/2131913.png" alt="Hip Hop Icon" class="genre-icon">
+                        <h3>Hip Hop</h3>
+                    </div>
+                    <div class="genre-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/7000/7000450.png" alt="Jazz Icon" class="genre-icon">
+                        <h3>Jazz</h3>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; Music Genre Finder | This is a Personal Project | Open Source</p>
+        </footer>
+    </div>
+</body>
+</html>

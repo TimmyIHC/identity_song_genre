@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genre Result</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <div class="result-content">
+            <div class="result-section">
+                <h2 class="highlight">Song Name:</h2>
+                <p class="song-name professional">{{ song_name }}</p>
+            </div>
+            <div class="result-section">
+                <h2 class="highlight">Genre:</h2>
+                <p class="genre-name professional">{{ genre_info.split('::')[0].strip() }}</p>
+            </div>
+            <div class="result-section">
+                <h2 class="highlight">Spotify Preview:</h2>
+                <iframe src="https://open.spotify.com/embed/track/{{ genre_info.split('/')[-1] }}" width="300" height="380" frameBorder="0" allow="encrypted-media" style="border-radius: 10px;"></iframe>
+                <p class="spotify-link">
+                    <a href="{{ genre_info.split(': ')[-1] }}" target="_blank">Listen on Spotify</a>
+                </p>
+            </div>
+        </div>
+        <a class="back-button" href="{{ url_for('index') }}">Identify Another Song</a>
+    </div>
+</body>
+</html>
