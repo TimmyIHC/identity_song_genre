@@ -9,12 +9,8 @@ This is a simple project that helps categorize music into appropriate genres. Ut
 - Fast and efficient processing of song data.
 
 ## Requirements
-To run this project, ensure you have the following installed:
-- Python 3.x
-- Flask
+To run this project, ensure to install all the required packages in below file installed:
+- requirement.txt
 
-## Setup Instructions
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/your-username/music-genre-finder.git
-   cd music-genre-finder
+## To RUN
+Just run the app.py file
